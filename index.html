@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gay Check</title>
+    <style>
+      body {
+        text-align: center;
+        font-family: sans-serif;
+        background: linear-gradient(45deg, #ff69b4, #ff1493, #1e90ff);
+        color: white;
+      }
+      .container {
+        background-color: white;
+        max-width: 300px;
+        color: black;
+        padding: 20px;
+        margin: auto;
+        border-radius: 8px;
+        margin-top: 90px;
+      }
+      button {
+        background-color: #ffffff; 
+        border: 2px solid #ff1493; 
+        color: #ff1493; 
+        padding: 15px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1.5em;
+        margin: 10px;
+        cursor: pointer;
+        border-radius: 30px; 
+        transition: transform 0.2s, background-color 0.2s, color 0.2s;
+      }
+
+      button:hover {
+        transform: scale(1.1); 
+        background-color: #ce1377; 
+        color: white; 
+      }
+      #text{
+        font-size: 50px;
+      }
+      #questions {
+    text-align: left;
+}
+   #questions p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Hello This is the Gay check</h2>
+      <p>Lets see if you are gay</p>
+      <button onclick="startGayCheck()">Start Gay Check</button>
+      <div id="questions" style="display: none;">
+          <p>Question 1: Do you like men?</p>
+          <label><input type="radio" name="q1" value="yes"> Yes</label>
+          <label><input type="radio" name="q1" value="no"> No</label>
+          <br><br>
+          <p>Question 2: Do you watch skibidi?</p>
+          <label><input type="radio" name="q2" value="yes"> Yes</label>
+          <label><input type="radio" name="q2" value="no"> No</label>
+          <br><br>
+          <p>Question 3: Do you have curly hair?</p>
+          <label><input type="radio" name="q3" value="yes"> Yes</label>
+          <label><input type="radio" name="q3" value="no"> No</label>
+     <button onclick="showText()">Click To check</button>
+    </div>
+    <p id="text"></p>
+    <script>
+        function showText(){
+            alert ("WE FOUND GAY PERSON");
+            document.getElementById("text").innerHTML = "You are gay ahmad! dont try😊"
+
+        }
+        function startGayCheck() {
+            document.getElementById('questions').style.display = 'block';
+            document.getElementById('message').innerText = '';
+        }
+    </script>
+        
+</body>
+</html>
